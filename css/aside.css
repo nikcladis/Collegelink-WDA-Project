@@ -1,0 +1,52 @@
+.sidebar {
+  width: 0;
+  padding: 1rem;
+  visibility: hidden;
+  transition: width 400ms ease;
+  position: fixed;
+  background-color: white;
+  inset: 0;
+}
+
+.sidebar__header {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .close-btn {
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+  background-color: inherit;
+}
+
+.sidebar .logo__container {
+  margin-left: 0.5rem;
+}
+
+.sidebar .sidebar__list {
+  margin-top: 1rem;
+}
+
+a.nav__link {
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: background-color 300ms ease;
+}
+
+a.nav__link:hover {
+  background-color: lightgray;
+}
+
+a.nav__link.active {
+  background-color: lightgray;
+}
+
+.sidebar .icon {
+  font-size: 25px;
+}

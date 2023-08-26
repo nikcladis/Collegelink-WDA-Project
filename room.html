@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="gr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Δωμάτιο</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <menu onclick="toggleSidebar()" class="material-symbols-outlined menu"
+        >menu</menu
+      >
+      <a class="logo__container" href="#">
+        <i class="material-symbols-outlined logo">beach_access</i>
+      </a>
+      <nav>
+        <ul class="header__list">
+          <li>
+            <a class="nav__link active" href="#">
+              <i class="material-symbols-outlined icon">home</i>
+              <p>Αρχική</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">
+              <i class="material-symbols-outlined icon">person</i>
+              <p>Προφίλ</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">
+              <i class="material-symbols-outlined icon">apartment</i>
+              <p>Ξενοδοχεία</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">
+              <i class="material-symbols-outlined icon">login</i>
+              <p>Είσοδος</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main__form">
+      <article>
+        <h1>Βρείτε το ταξίδι που σας ταιριάζει</h1>
+        <h2>
+          Κάντε την αναζήτησή σας συμπληρώνοντας τα παρακάτω πεδία αναζήτησης
+        </h2>
+        <form class="form">
+          <div class="field">
+            <div class="label">
+              <label>Προορισμός</label>
+              <details>
+                <summary>
+                  <i class="material-symbols-outlined help">help</i>
+                </summary>
+                <p>Πατήστε 'Αναζήτηση προορισμού'</p>
+              </details>
+            </div>
+            <input
+              class="input"
+              type="text"
+              placeholder="Αναζήτηση προορισμού"
+            />
+          </div>
+          <div class="field">
+            <div class="label">
+              <label>Αφετηρία</label>
+              <details>
+                <summary>
+                  <i class="material-symbols-outlined help">help</i>
+                </summary>
+                <p>Πατήστε «Αναζήτηση αφετηρίας»</p>
+              </details>
+            </div>
+            <input
+              class="input"
+              type="text"
+              placeholder="Αναζήτηση αφετηρίας"
+            />
+          </div>
+          <div class="field">
+            <div class="label">
+              <label>Διανυκτερεύσεις</label>
+              <details>
+                <summary>
+                  <i class="material-symbols-outlined help">help</i>
+                </summary>
+                <p>Πατήστε «Επιλογή διανυκτερεύσεων»</p>
+              </details>
+            </div>
+            <input
+              class="input"
+              type="text"
+              placeholder="Επιλογή διανυκτερεύσεων"
+            />
+          </div>
+          <div class="field">
+            <div class="label">
+              <label>Αναχώρηση</label>
+              <details>
+                <summary>
+                  <i class="material-symbols-outlined help">help</i>
+                </summary>
+                <p>Πατήστε «Επιλογή αναχώρησης»</p>
+              </details>
+            </div>
+            <input class="input" type="text" placeholder="Επιλογή αναχώρησης" />
+          </div>
+        </form>
+        <button class="search-btn">
+          <p class="search-text">Αναζήτηση</p>
+          <i class="material-symbols-outlined search-arrow">chevron_right</i>
+        </button>
+      </article>
+    </main>
+    <footer>
+      <div class="footer__head">
+        <a class="logo__container" href="#">
+          <i class="material-symbols-outlined logo">beach_access</i>
+        </a>
+      </div>
+      <div class="footer__sections">
+        <section>
+          <h2>Ανακάλυψε</h2>
+          <a href="#"><p>Ταξιδιωτικό Blog</p></a>
+        </section>
+        <section>
+          <h2>Επικοινωνία</h2>
+          <a href="#"><p>Στοιχεία Επικοινωνίας</p></a>
+          <ul class="social-list">
+            <li>
+              <a href="#" class="fa fa-facebook social-icon"></a>
+            </li>
+            <li>
+              <a href="#" class="fa fa-instagram social-icon"></a>
+            </li>
+            <li>
+              <a href="#" class="fa fa-youtube social-icon"></a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Γενικές Πληροφορίες</h2>
+          <a href="#"><p>Όροι συμμετοχής</p></a>
+          <a href="#"><p>Πολιτική απορρήτου</p></a>
+        </section>
+      </div>
+      <p class="copyright"><small>© Copyright 2023</small></p>
+      <p></p>
+    </footer>
+
+    <aside class="sidebar" id="mySidebar">
+      <div class="sidebar__header">
+        <a class="logo__container" href="#">
+          <i class="material-symbols-outlined logo">beach_access</i>
+        </a>
+        <button
+          onclick="toggleSidebar()"
+          class="material-symbols-outlined close-btn"
+        >
+          close
+        </button>
+      </div>
+      <nav>
+        <ul class="sidebar__list">
+          <li>
+            <a class="nav__link active" href="#">
+              <i class="material-symbols-outlined icon">home</i>
+              <p>Αρχική</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">
+              <i class="material-symbols-outlined icon">person</i>
+              <p>Προφίλ</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">
+              <i class="material-symbols-outlined icon">apartment</i>
+              <p>Ξενοδοχεία</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">
+              <i class="material-symbols-outlined icon">login</i>
+              <p>Είσοδος</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </body>
+</html>

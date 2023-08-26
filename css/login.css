@@ -1,0 +1,105 @@
+.main__login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  padding: 2rem;
+  margin-block: 3rem;
+  margin-inline: auto;
+  border-radius: 8px;
+}
+
+.main__login h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.main__login form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.main__login .form__container {
+  width: 100%;
+}
+
+.main__login label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.main__login input {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+
+.main__login .btn {
+  width: 100%;
+  color: white;
+  background-color: #3eb373;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.main__login .btn--login:hover {
+  background-color: #3eb373cc;
+}
+
+.main__login .btn--white {
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+}
+
+.main__login .btn--white:hover {
+  background-color: #f5f5f5;
+}
+
+.main__login .btn--forgot {
+  background-color: transparent;
+  color: black;
+}
+
+.main__login .btn--forgot:hover {
+  text-decoration: underline;
+}
+
+.main__login .btn--facebook {
+  background-color: #3b5998;
+}
+
+.main__login .btn--facebook:hover {
+  background-color: #3b5998cc;
+}
+
+.main__login .btn--google {
+  background-color: #db4a39;
+}
+
+.main__login .btn--google:hover {
+  background-color: #db4a39cc;
+}
+
+@media (min-width: 768px) {
+  .main__login {
+    margin-inline: auto;
+  }
+
+  .main__login .btn--google {
+  }
+}

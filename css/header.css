@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.logo {
+  font-size: 40px;
+  color: azure;
+  background-color: dodgerblue;
+  border-radius: 100%;
+  padding: 0.1rem;
+}
+
+header .logo__container {
+  transform: translateX(-50%);
+  margin: auto;
+}
+
+header .menu {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.header__list {
+  display: none;
+}

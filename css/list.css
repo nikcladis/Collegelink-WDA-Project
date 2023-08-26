@@ -1,0 +1,134 @@
+.main__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.main__list .main__filters {
+  position: sticky;
+  top: 0.5rem;
+  background-color: #ffc107;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.main__list .main__filters .filters__bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.main__list .main__filters .filters__bar h2 {
+  text-align: center;
+}
+
+.main__list .main__filters:hover {
+  background-color: #ffca2c;
+}
+
+.main__list .main__filters h2 {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.main__list .main__hotels {
+  margin-top: 1rem;
+  flex-grow: 1;
+}
+
+.main__list h1 {
+  font-size: 1.5rem;
+  margin-block: 1rem;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.main__list .card__hotel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin-inline: auto;
+}
+
+.main__list .card__img {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 16/9;
+  border-radius: 8px 8px 0 0;
+}
+
+.main__list h2 {
+  font-size: 1rem;
+  text-decoration: underline;
+  margin: 0;
+  padding: 10px;
+}
+
+.main__list h3 {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.filter__sidebar {
+  width: 0;
+  padding: 1rem;
+  font-size: 1rem;
+  visibility: hidden;
+  position: fixed;
+  background-color: #ffc107;
+  background-color: white;
+  transition: width 400ms ease;
+  inset: 0;
+}
+
+.filter__sidebar h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.btn__container--filter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn--filter {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .main__list {
+    flex-direction: row;
+  }
+
+  .main__list .main__filters {
+    display: none;
+  }
+
+  .main__list ul {
+    width: 100%;
+  }
+
+  .main__list .card__hotel {
+    flex-direction: row;
+  }
+
+  .main__list .card__img {
+    border-radius: 8px 0 0 8px;
+  }
+}

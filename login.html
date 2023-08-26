@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="gr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Είσοδος</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <menu onclick="toggleSidebar()" class="material-symbols-outlined menu"
+        >menu</menu
+      >
+      <a class="logo__container" href="#">
+        <i class="material-symbols-outlined logo">beach_access</i>
+      </a>
+      <nav>
+        <ul class="header__list">
+          <li>
+            <a class="nav__link" href="./index.html">
+              <i class="material-symbols-outlined icon">home</i>
+              <p>Αρχική</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">
+              <i class="material-symbols-outlined icon">person</i>
+              <p>Προφίλ</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">
+              <i class="material-symbols-outlined icon">apartment</i>
+              <p>Ξενοδοχεία</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link active" href="#">
+              <i class="material-symbols-outlined icon">login</i>
+              <p>Είσοδος</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main__login">
+      <h1>Είσοδος</h1>
+      <form action="login.php" method="post">
+        <div class="form__container">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Εισάγετε το email σας"
+            required
+          />
+        </div>
+        <div class="form__container">
+          <label for="password">Κωδικος</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Εισάγετε τον κωδικό σας"
+            required
+          />
+        </div>
+        <button class="btn btn--login" type="submit">Είσοδος</button>
+      </form>
+      <button class="btn btn--white">
+        <a href="./register.html">Δεν έχω λογαριασμό</a>
+      </button>
+      <button class="btn btn--forgot">Ξέχασα τον κωδικό μου</button>
+      <button class="btn btn--facebook">Είσοδος με Facebook</button>
+      <button class="btn btn--google">Είσοδος με Google</button>
+    </main>
+    <footer>
+      <div class="footer__head">
+        <a class="logo__container" href="#">
+          <i class="material-symbols-outlined logo">beach_access</i>
+        </a>
+      </div>
+      <div class="footer__sections">
+        <section>
+          <h2>Ανακάλυψε</h2>
+          <a href="#"><p>Ταξιδιωτικό Blog</p></a>
+        </section>
+        <section>
+          <h2>Επικοινωνία</h2>
+          <a href="#"><p>Στοιχεία Επικοινωνίας</p></a>
+          <ul class="social-list">
+            <li>
+              <a href="#" class="fa fa-facebook social-icon"></a>
+            </li>
+            <li>
+              <a href="#" class="fa fa-instagram social-icon"></a>
+            </li>
+            <li>
+              <a href="#" class="fa fa-youtube social-icon"></a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Γενικές Πληροφορίες</h2>
+          <a href="#"><p>Όροι συμμετοχής</p></a>
+          <a href="#"><p>Πολιτική απορρήτου</p></a>
+        </section>
+      </div>
+      <p class="copyright"><small>© Copyright 2023</small></p>
+      <p></p>
+    </footer>
+
+    <aside class="sidebar" id="mySidebar">
+      <div class="sidebar__header">
+        <a class="logo__container" href="#">
+          <i class="material-symbols-outlined logo">beach_access</i>
+        </a>
+        <button
+          onclick="toggleSidebar()"
+          class="material-symbols-outlined close-btn"
+        >
+          close
+        </button>
+      </div>
+      <nav>
+        <ul class="sidebar__list">
+          <li>
+            <a class="nav__link" href="./index.html">
+              <i class="material-symbols-outlined icon">home</i>
+              <p>Αρχική</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">
+              <i class="material-symbols-outlined icon">person</i>
+              <p>Προφίλ</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link" href="#">
+              <i class="material-symbols-outlined icon">apartment</i>
+              <p>Ξενοδοχεία</p>
+            </a>
+          </li>
+          <li>
+            <a class="nav__link active" href="#">
+              <i class="material-symbols-outlined icon">login</i>
+              <p>Είσοδος</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </body>
+</html>

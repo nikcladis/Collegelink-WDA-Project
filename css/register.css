@@ -1,0 +1,141 @@
+.main__register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  max-width: 400px;
+  padding: 2rem;
+  margin-block: 3rem;
+  margin-inline: auto;
+  border-radius: 8px;
+}
+
+.main__register h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.main__register .form__container {
+  width: 100%;
+}
+
+.main__register .label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 0.3rem;
+}
+
+.main__register .required {
+  color: red;
+}
+
+.main__register .help {
+  position: relative;
+  font-size: 18px;
+  top: -1px;
+}
+
+.main__register .help-text {
+  left: -15px;
+  top: 18px;
+}
+
+.main__register form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.main__register label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.main__register input {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
+
+.main__register .checkbox__container {
+  margin-top: 1rem;
+  display: flex;
+  background-color: #fe5764;
+  border: 1px solid #fe5764;
+  border-radius: 8px;
+}
+
+.main__register .warning {
+  color: white;
+  background-color: #be3945;
+  padding: 1rem 0.5rem;
+  border-radius: 8px 0 0 8px;
+}
+
+.main__register .checkbox__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 82%;
+  padding-left: 1rem;
+}
+
+.main__register .checkbox__label {
+  font-size: 0.6rem;
+  color: white;
+  text-transform: none;
+  width: fit-content;
+}
+
+.main__register .checkbox__label a {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.main__register .checkbox {
+  width: fit-content;
+  margin-block: auto;
+  font-size: 1.5rem;
+}
+
+.main__register .btn {
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn--register {
+  background-color: #359862;
+}
+
+.main__register .btn--register:hover {
+  background-color: #2e7a53;
+}
+
+.main__register .btn--return {
+  background-color: transparent;
+  color: black;
+  border: 1px solid gray;
+}
+
+.main__register .btn--return:hover {
+  background-color: #f5f5f5;
+}
+
+.main__register .bt {
+  background-color: #e6e6e6;
+}
