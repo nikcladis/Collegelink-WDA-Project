@@ -56,11 +56,57 @@
       </nav>
     </header>
     <main class="main__list">
-      <section onclick="toggleFilterSidebar()" class="main__filters">
-        <div class="filters__bar">
+      <section class="main__filters">
+        <div onclick="toggleFilterSidebar()" class="filters__bar">
           <i class="material-symbols-outlined settings">tune</i>
           <h2>Εμφάνιση φίλτρων</h2>
         </div>
+        <aside class="filters__desktop">
+          <div class="filters__head">
+            <i class="material-symbols-outlined settings">tune</i>
+            <h2>Φιλτρα Αναζητησης</h2>
+          </div>
+          <form class="filter__form" action="list.php">
+            <div class="filter__container">
+              <label for="guests">Κρεβάτια</label>
+              <input type="number" name="guests" id="guests" />
+            </div>
+            <div class="filter__container">
+              <label for="rooms">Δωμάτια</label>
+              <input type="number" name="rooms" id="rooms" />
+            </div>
+            <div class="filter__container">
+              <label for="city">Πόλη</label>
+              <input type="text" name="city" id="city" />
+            </div>
+            <div class="filter__container">
+              <label for="price">Τιμή: <span id="priceValue">50</span>€</label>
+              <input
+                type="range"
+                name="price"
+                id="price"
+                min="0"
+                max="5000"
+                value="50"
+                oninput="updatePriceValue(this.value)"
+              />
+            </div>
+            <div class="filter__container">
+              <label for="checkin-date">Άφηξη</label>
+              <input type="date" name="check-in" id="check-in" />
+            </div>
+            <div class="filter__container">
+              <label for="checkout-date">Αναχώρηση</label>
+              <input type="date" name="check-out" id="check-out" />
+            </div>
+            <button class="search-btn" type="submit">
+              <p class="search-text">Αναζήτηση</p>
+              <i class="material-symbols-outlined search-arrow"
+                >chevron_right</i
+              >
+            </button>
+          </form>
+        </aside>
       </section>
       <section class="main__hotels">
         <ul>
@@ -72,10 +118,24 @@
                   src="https://apithegreeks.gumlet.io/hotels/dorian-inn/cover.jpg?w=&h=285&v=1680768320&site=18-24-travel"
                   alt="hotel"
                 />
-                <div>
+                <section class="card__text">
                   <h2>Hilton Hotel</h2>
-                  <h3>Athens, Zwgrafou</h3>
-                </div>
+                  <p>Athens, Zwgrafou</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, qui.
+                  </p>
+                  <div class="hotel__info">
+                    <h3 class="hotel__price"><small>Από</small> 350€</h3>
+                    <p class="hotel__spec">
+                      <i class="material-symbols-outlined">bed</i>2 Κρεβάτια
+                    </p>
+                    <p class="hotel__spec">
+                      <i class="material-symbols-outlined">door_front</i>2
+                      Δωμάτια
+                    </p>
+                  </div>
+                </section>
               </article>
             </a>
           </li>
@@ -87,10 +147,24 @@
                   src="https://apithegreeks.gumlet.io/hotels/mikelina-boutique-hotel/cover.jpg?w=&h=285&v=1680767922&site=18-24-travel"
                   alt="hotel"
                 />
-                <div>
+                <section class="card__text">
                   <h2>Megali Vretania Hotel</h2>
-                  <h3>Athens, Syntagma</h3>
-                </div>
+                  <p>Athens, Syntagma</p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae, qui.
+                  </p>
+                  <div class="hotel__info">
+                    <h3 class="hotel__price"><small>Από</small> 500€</h3>
+                    <p class="hotel__spec">
+                      <i class="material-symbols-outlined">bed</i>2 Κρεβάτια
+                    </p>
+                    <p class="hotel__spec">
+                      <i class="material-symbols-outlined">door_front</i>2
+                      Δωμάτια
+                    </p>
+                  </div>
+                </section>
               </article>
             </a>
           </li>
@@ -184,7 +258,48 @@
           close
         </button>
       </div>
-      <h3>Φιλτρα Αναζήτησης</h3>
+      <div class="filters__head">
+        <i class="material-symbols-outlined settings">tune</i>
+        <h2>Φιλτρα Αναζητησης</h2>
+      </div>
+      <form class="filter__form" action="list.php">
+        <div class="filter__container">
+          <label for="guests">Κρεβάτια</label>
+          <input type="number" name="guests" id="guests" />
+        </div>
+        <div class="filter__container">
+          <label for="rooms">Δωμάτια</label>
+          <input type="number" name="rooms" id="rooms" />
+        </div>
+        <div class="filter__container">
+          <label for="city">Πόλη</label>
+          <input type="text" name="city" id="city" />
+        </div>
+        <div class="filter__container">
+          <label for="price">Τιμή: <span id="priceValue">50</span>€</label>
+          <input
+            type="range"
+            name="price"
+            id="price"
+            min="0"
+            max="5000"
+            value="50"
+            oninput="updatePriceValue(this.value)"
+          />
+        </div>
+        <div class="filter__container">
+          <label for="checkin-date">Άφηξη</label>
+          <input type="date" name="check-in" id="check-in" />
+        </div>
+        <div class="filter__container">
+          <label for="checkout-date">Αναχώρηση</label>
+          <input type="date" name="check-out" id="check-out" />
+        </div>
+        <button class="search-btn" type="submit">
+          <p class="search-text">Αναζήτηση</p>
+          <i class="material-symbols-outlined search-arrow">chevron_right</i>
+        </button>
+      </form>
     </aside>
   </body>
 </html>

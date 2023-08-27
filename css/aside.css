@@ -4,6 +4,7 @@
   visibility: hidden;
   transition: width 400ms ease;
   position: fixed;
+  z-index: 3;
   background-color: white;
   inset: 0;
 }

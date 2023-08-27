@@ -11,3 +11,7 @@ function toggleFilterSidebar() {
     sidebar.style.transition = "none";
   }
 }
+
+function updatePriceValue(val) {
+  document.getElementById("priceValue").innerText = val;
+}
