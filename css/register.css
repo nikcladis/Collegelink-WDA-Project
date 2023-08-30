@@ -3,17 +3,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-block: 2rem;
+  margin-inline: auto;
+  max-width: 400px;
+}
+
+.main__register .register__form {
   border: 1px solid #ccc;
   max-width: 400px;
   padding: 2rem;
-  margin-block: 3rem;
-  margin-inline: auto;
+  margin-bottom: 3rem;
+  margin-inline: 1rem;
   border-radius: 8px;
 }
 
 .main__register h1 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
+  margin-inline: 1rem;
+  text-align: center;
 }
 
 .main__register .form__container {

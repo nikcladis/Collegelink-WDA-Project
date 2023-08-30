@@ -68,19 +68,31 @@
           </div>
           <form class="filter__form" action="list.php">
             <div class="filter__container">
-              <label for="guests">Κρεβάτια</label>
+              <label for="guests">
+                <i class="material-symbols-outlined"> bed </i>
+                <p>Κρεβάτια</p>
+              </label>
               <input type="number" name="guests" id="guests" />
             </div>
             <div class="filter__container">
-              <label for="rooms">Δωμάτια</label>
+              <label for="rooms">
+                <i class="material-symbols-outlined"> door_front </i>
+                <p>Δωμάτια</p>
+              </label>
               <input type="number" name="rooms" id="rooms" />
             </div>
             <div class="filter__container">
-              <label for="city">Πόλη</label>
+              <label for="city">
+                <i class="material-symbols-outlined"> location_on </i>
+                <p>Πόλη</p>
+              </label>
               <input type="text" name="city" id="city" />
             </div>
             <div class="filter__container">
-              <label for="price">Τιμή: <span id="priceValue">50</span>€</label>
+              <label for="price">
+                <i class="material-symbols-outlined"> sell </i>
+                <p>Τιμή: <span id="priceValue">50</span>€</p>
+              </label>
               <input
                 type="range"
                 name="price"
@@ -92,12 +104,30 @@
               />
             </div>
             <div class="filter__container">
-              <label for="checkin-date">Άφηξη</label>
-              <input type="date" name="check-in" id="check-in" />
+              <label for="checkin-date">
+                <i class="material-symbols-outlined"> calendar_month </i>
+                <p>Άφηξη</p>
+              </label>
+              <input
+                type="date"
+                name="check-in"
+                id="check-in"
+                placeholder="YYYY-MM-DD"
+                min=""
+              />
             </div>
             <div class="filter__container">
-              <label for="checkout-date">Αναχώρηση</label>
-              <input type="date" name="check-out" id="check-out" />
+              <label for="checkout-date">
+                <i class="material-symbols-outlined"> calendar_month </i>
+                <p>Αναχώρηση</p>
+              </label>
+              <input
+                type="date"
+                name="check-out"
+                id="check-out"
+                placeholder="YYYY-MM-DD"
+                min=""
+              />
             </div>
             <button class="search-btn" type="submit">
               <p class="search-text">Αναζήτηση</p>
@@ -111,7 +141,7 @@
       <section class="main__hotels">
         <ul>
           <li>
-            <a href="#">
+            <a href="./room.html">
               <article class="card__hotel">
                 <img
                   class="card__img"

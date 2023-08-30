@@ -69,3 +69,12 @@ details p::before {
   color: #173458;
   top: -12px;
 }
+
+input {
+  transition: box-shadow 200ms ease;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px dodgerblue;
+}

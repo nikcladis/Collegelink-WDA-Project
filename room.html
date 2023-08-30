@@ -13,6 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/room.css" />
     <script src="js/main.js" defer></script>
   </head>
 
@@ -21,13 +22,13 @@
       <menu onclick="toggleSidebar()" class="material-symbols-outlined menu"
         >menu</menu
       >
-      <a class="logo__container" href="#">
+      <a class="logo__container" href="./index.html">
         <i class="material-symbols-outlined logo">beach_access</i>
       </a>
       <nav>
         <ul class="header__list">
           <li>
-            <a class="nav__link active" href="#">
+            <a class="nav__link" href="./index.html">
               <i class="material-symbols-outlined icon">home</i>
               <p>Αρχική</p>
             </a>
@@ -39,13 +40,13 @@
             </a>
           </li>
           <li>
-            <a class="nav__link" href="#">
+            <a class="nav__link active" href="./list.html">
               <i class="material-symbols-outlined icon">apartment</i>
               <p>Ξενοδοχεία</p>
             </a>
           </li>
           <li>
-            <a class="nav__link" href="#">
+            <a class="nav__link" href="./login.html">
               <i class="material-symbols-outlined icon">login</i>
               <p>Είσοδος</p>
             </a>
@@ -53,79 +54,32 @@
         </ul>
       </nav>
     </header>
-    <main class="main__form">
-      <article>
-        <h1>Βρείτε το ταξίδι που σας ταιριάζει</h1>
-        <h2>
-          Κάντε την αναζήτησή σας συμπληρώνοντας τα παρακάτω πεδία αναζήτησης
-        </h2>
-        <form class="form">
-          <div class="field">
-            <div class="label">
-              <label>Προορισμός</label>
-              <details>
-                <summary>
-                  <i class="material-symbols-outlined help">help</i>
-                </summary>
-                <p>Πατήστε 'Αναζήτηση προορισμού'</p>
-              </details>
+    <main class="main__room">
+      <div>
+        <article class="card__hotel">
+          <img
+            class="card__img"
+            src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="hotel"
+          />
+          <main class="card__description">
+            <h2>Hilton Hotel</h2>
+            <div>
+              <i class="material-symbols-outlined">grade</i>
+              <i class="material-symbols-outlined">grade</i>
+              <i class="material-symbols-outlined">grade</i>
+              <i class="material-symbols-outlined">grade</i>
+              <i class="material-symbols-outlined">grade</i>
             </div>
-            <input
-              class="input"
-              type="text"
-              placeholder="Αναζήτηση προορισμού"
-            />
-          </div>
-          <div class="field">
-            <div class="label">
-              <label>Αφετηρία</label>
-              <details>
-                <summary>
-                  <i class="material-symbols-outlined help">help</i>
-                </summary>
-                <p>Πατήστε «Αναζήτηση αφετηρίας»</p>
-              </details>
+            <p>Αθήνα, Σύνταγμα</p>
+            <div class="card__address">
+              <p><a href="#">Διεύθυνση</a></p>
+              <i class="material-symbols-outlined icon">open_in_new</i>
             </div>
-            <input
-              class="input"
-              type="text"
-              placeholder="Αναζήτηση αφετηρίας"
-            />
-          </div>
-          <div class="field">
-            <div class="label">
-              <label>Διανυκτερεύσεις</label>
-              <details>
-                <summary>
-                  <i class="material-symbols-outlined help">help</i>
-                </summary>
-                <p>Πατήστε «Επιλογή διανυκτερεύσεων»</p>
-              </details>
-            </div>
-            <input
-              class="input"
-              type="text"
-              placeholder="Επιλογή διανυκτερεύσεων"
-            />
-          </div>
-          <div class="field">
-            <div class="label">
-              <label>Αναχώρηση</label>
-              <details>
-                <summary>
-                  <i class="material-symbols-outlined help">help</i>
-                </summary>
-                <p>Πατήστε «Επιλογή αναχώρησης»</p>
-              </details>
-            </div>
-            <input class="input" type="text" placeholder="Επιλογή αναχώρησης" />
-          </div>
-        </form>
-        <button class="search-btn">
-          <p class="search-text">Αναζήτηση</p>
-          <i class="material-symbols-outlined search-arrow">chevron_right</i>
-        </button>
-      </article>
+            <hr class="line" />
+          </main>
+        </article>
+      </div>
     </main>
     <footer>
       <div class="footer__head">
@@ -178,7 +132,7 @@
       <nav>
         <ul class="sidebar__list">
           <li>
-            <a class="nav__link active" href="#">
+            <a class="nav__link" href="./index.html">
               <i class="material-symbols-outlined icon">home</i>
               <p>Αρχική</p>
             </a>
@@ -190,13 +144,13 @@
             </a>
           </li>
           <li>
-            <a class="nav__link" href="#">
+            <a class="nav__link active" href="./list.html">
               <i class="material-symbols-outlined icon">apartment</i>
               <p>Ξενοδοχεία</p>
             </a>
           </li>
           <li>
-            <a class="nav__link" href="#">
+            <a class="nav__link" href="./login.html">
               <i class="material-symbols-outlined icon">login</i>
               <p>Είσοδος</p>
             </a>

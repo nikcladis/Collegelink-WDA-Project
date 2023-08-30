@@ -1,0 +1,50 @@
+.main__room {
+  margin-block: 2rem auto;
+}
+
+.main__room .card__hotel {
+  margin-inline: 1rem;
+}
+
+.main__room .card__img {
+  width: 100%;
+  min-height: 300px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.main__room .card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-inline: 1rem;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  top: -7rem;
+  z-index: 1;
+}
+
+.main__room .card__address {
+  color: #ff7f00;
+  font-weight: bold;
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.card__address a {
+  text-decoration: underline;
+}
+
+.card__address .icon {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.card__hotel .line {
+  border-color: rgba(0, 0, 0, 0.2);
+}

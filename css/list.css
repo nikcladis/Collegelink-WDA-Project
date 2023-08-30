@@ -165,6 +165,7 @@
 }
 
 :is(.filters__desktop, .filter__sidebar) .filters__head {
+  font-size: 0.6rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -174,6 +175,7 @@
 
 :is(.filters__desktop, .filter__sidebar) .filters__head h2 {
   font-weight: bold;
+  margin-left: 0.5rem;
 }
 
 :is(.filters__desktop, .filter__sidebar) .filter__form {
@@ -190,6 +192,9 @@
   font-size: 0.8rem;
   font-weight: 600;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 :is(.filters__desktop, .filter__sidebar) .filter__form input {
@@ -232,6 +237,11 @@
   filter: brightness(0.9);
 }
 
+:is(.filters__desktop, .filter__sidebar) .calendar-icon {
+  margin-left: 5px;
+  vertical-align: text-top;
+}
+
 @media (min-width: 768px) {
   .main__list {
     flex-direction: row;
@@ -252,7 +262,7 @@
     margin-top: 1rem;
     flex-basis: 20%;
     flex-grow: 1;
-    min-width: 200px;
+    min-width: 250px;
   }
 
   .main__list .main__filters .filters__desktop {

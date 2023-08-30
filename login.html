@@ -55,36 +55,38 @@
       </nav>
     </header>
     <main class="main__login">
-      <h1>Είσοδος</h1>
-      <form action="login.php" method="post">
-        <div class="form__container">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Εισάγετε το email σας"
-            required
-          />
-        </div>
-        <div class="form__container">
-          <label for="password">Κωδικος</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Εισάγετε τον κωδικό σας"
-            required
-          />
-        </div>
-        <button class="btn btn--login" type="submit">Είσοδος</button>
-      </form>
-      <button class="btn btn--white">
-        <a href="./register.html">Δεν έχω λογαριασμό</a>
-      </button>
-      <button class="btn btn--forgot">Ξέχασα τον κωδικό μου</button>
-      <button class="btn btn--facebook">Είσοδος με Facebook</button>
-      <button class="btn btn--google">Είσοδος με Google</button>
+      <div class="main__login--container">
+        <h1>Είσοδος</h1>
+        <form action="login.php" method="post">
+          <div class="form__container">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Εισάγετε το email σας"
+              required
+            />
+          </div>
+          <div class="form__container">
+            <label for="password">Κωδικος</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Εισάγετε τον κωδικό σας"
+              required
+            />
+          </div>
+          <button class="btn btn--login" type="submit">Είσοδος</button>
+        </form>
+        <button class="btn btn--white">
+          <a href="./register.html">Δεν έχω λογαριασμό</a>
+        </button>
+        <button class="btn btn--forgot">Ξέχασα τον κωδικό μου</button>
+        <button class="btn btn--facebook">Είσοδος με Facebook</button>
+        <button class="btn btn--google">Είσοδος με Google</button>
+      </div>
     </main>
     <footer>
       <div class="footer__head">
@@ -149,13 +151,13 @@
             </a>
           </li>
           <li>
-            <a class="nav__link" href="#">
+            <a class="nav__link" href="./list.html">
               <i class="material-symbols-outlined icon">apartment</i>
               <p>Ξενοδοχεία</p>
             </a>
           </li>
           <li>
-            <a class="nav__link active" href="#">
+            <a class="nav__link active" href="./login.html">
               <i class="material-symbols-outlined icon">login</i>
               <p>Είσοδος</p>
             </a>

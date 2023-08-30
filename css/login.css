@@ -1,4 +1,8 @@
 .main__login {
+  margin-inline: 1rem;
+}
+
+.main__login--container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,6 +13,7 @@
   margin-block: 3rem;
   margin-inline: auto;
   border-radius: 8px;
+  max-width: 320px;
 }
 
 .main__login h1 {
@@ -21,7 +26,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-inline: auto;
 }
 
 .main__login .form__container {
